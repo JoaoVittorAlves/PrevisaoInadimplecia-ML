@@ -1,0 +1,71 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc.*
+*.py,cover
+
+# =========================
+# Ambiente virtual
+# =========================
+venv/
+env/
+.venv/
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Dados (evita subir dataset pesado)
+# =========================
+data/raw/
+data/processed/
+
+# (opcional: permitir README dentro da pasta data)
+!data/**/README.md
+
+# =========================
+# Resultados e modelos
+# =========================
+models/
+results/
+
+# =========================
+# Logs e arquivos temporários
+# =========================
+*.log
+*.tmp
+*.swp
+
+# =========================
+# Sistema operacional
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# VSCode
+# =========================
+.vscode/
+
+# =========================
+# Variáveis de ambiente
+# =========================
+.env
+
+# =========================
+# Build / distribuição
+# =========================
+build/
+dist/
+*.egg-info/
+
+# =========================
+# Cache de bibliotecas
+# =========================
+.cache/
