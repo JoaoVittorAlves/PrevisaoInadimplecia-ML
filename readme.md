@@ -1,79 +1,94 @@
-# AlzheimerPredict: Predição de Alzheimer e Análise de Fatores de Risco com Machine Learning
+# 🧠 Previsão de Inadimplência
 
-## Projeto de Ciência de Dados que utiliza técnicas de Aprendizado de Máquina para prever o diagnóstico de Alzheimer com base em dados clínicos, demográficos, comportamentais e cognitivos. Além da predição, o projeto busca identificar quais fatores possuem maior influência no desenvolvimento da doença, contribuindo para uma análise mais fundamentada.
-
----
-
-## Objetivos Específicos
-
-- Realizar análise exploratória dos dados
-
-- Construir um pipeline de pré-processamento
-
-- Treinar e comparar diferentes algoritmos de classificação
-
-- Avaliar o desempenho dos modelos
-
-- Identificar as variáveis mais importantes
-
-- Analisar o impacto de diferentes grupos de atributos
+Projeto de Machine Learning desenvolvido para prever a **probabilidade de inadimplência de clientes B2B**, com base em dados cadastrais e comportamentais da startup Praso 
 
 ---
 
-## Perguntas a serem respondidas
+## 🚀 Objetivo
 
-Este projeto busca responder questões como:
+Construir modelos preditivos para:
 
-- Características demográficas são suficientes para prever Alzheimer?
-- Fatores de estilo de vida melhoram a capacidade preditiva?
-- Qual o impacto de variáveis clínicas e cognitivas?
-- Quais atributos são mais relevantes para o diagnóstico?
-- Existe ganho significativo ao combinar diferentes tipos de dados?
+1. **Avaliação de novos clientes (Application Model)**
+   - Prever risco de inadimplência no momento do cadastro
 
----
-
-## Tecnologias Utilizadas
-
-- Python
-- Pandas
-- Scikit-learn
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
+2. **Avaliação de clientes recorrentes (Behavioral Model)**
+   - Prever risco com base no histórico de pedidos
 
 ---
 
-## Metodologia
+## 🏢 Contexto de Negócio
 
-### 1. Pré-processamento
-- Tratamento de dados ausentes
-- Codificação de variáveis categóricas
-- Normalização de dados
-- Análise de correlação
+A Praso atua como um marketplace B2B conectando indústrias e varejistas. Um dos principais desafios é:
 
-### 2. Modelagem
+> **Reduzir o risco de inadimplência ao conceder crédito para pequenos empreendedores**
 
-Serão utilizados os seguintes algoritmos:
+---
 
+## 📊 Dados Utilizados
+
+### 🔹 Dados de Clientes
+- Informações cadastrais
+- Dados de crédito (Serasa)
+- Presença digital (iFood, Google Maps)
+
+### 🔹 Dados de Pedidos
+- Histórico de compras
+- Valores dos pedidos
+- Atrasos nos pagamentos
+
+---
+
+## 🧪 Metodologia
+
+### 1. Análise Exploratória (EDA)
+- Identificação de padrões de inadimplência
+- Visualização de variáveis relevantes
+
+### 2. Feature Engineering
+- Criação de variáveis derivadas
+- Agregações comportamentais por cliente
+- Tratamento de dados categóricos e nulos
+
+### 3. Modelagem
+Modelos testados:
 - Regressão Logística
-- Árvore de Decisão
 - Random Forest
-- KNN
-
-### 3. Experimentos
-
-Serão avaliados três cenários:
-
-1. **Demografia apenas**
-2. **Demografia + Estilo de Vida**
-3. **Todos os dados (incluindo clínicos e cognitivos)**
+- XGBoost
 
 ### 4. Avaliação
+- Métrica principal: **ROC-AUC**
+- Comparação entre modelos
 
-Métricas utilizadas:
+---
 
-- Accuracy
-- Precision
-- Recall
-- F1-score
-- Matriz de confusão
+## 🧠 Modelos Desenvolvidos
+
+### 📌 Modelo de Aplicação
+- Entrada: dados cadastrais
+- Saída: score de risco (0 a 1)
+
+### 📌 Modelo Comportamental
+- Entrada: dados cadastrais + histórico de pedidos
+- Saída: score de risco atualizado
+
+---
+
+## 💼 Política de Crédito (Proposta)
+
+| Score de Risco | Decisão |
+|---------------|--------|
+| < 0.2         | Aprovar crédito |
+| 0.2 – 0.4     | Aprovar com limite reduzido |
+| > 0.4         | Rejeitar |
+
+---
+
+## 🗂️ Estrutura do Projeto
+
+---
+## ⚙️ Tecnologias
+
+---
+## ▶️ Como Executar
+
+---
