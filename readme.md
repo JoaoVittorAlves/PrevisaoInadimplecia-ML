@@ -1,10 +1,10 @@
-# 🧠 Previsão de Inadimplência
+# Previsão de Inadimplência
 
 Projeto de Machine Learning desenvolvido para prever a **probabilidade de inadimplência de clientes B2B**, com base em dados cadastrais e comportamentais da startup Praso 
 
 ---
 
-## 🚀 Objetivo
+## Objetivo
 
 Construir modelos preditivos para:
 
@@ -16,7 +16,7 @@ Construir modelos preditivos para:
 
 ---
 
-## 🏢 Contexto de Negócio
+## Contexto de Negócio
 
 A Praso atua como um marketplace B2B conectando indústrias e varejistas. Um dos principais desafios é:
 
@@ -24,21 +24,21 @@ A Praso atua como um marketplace B2B conectando indústrias e varejistas. Um dos
 
 ---
 
-## 📊 Dados Utilizados
+## Dados Utilizados
 
-### 🔹 Dados de Clientes
+### Dados de Clientes
 - Informações cadastrais
 - Dados de crédito (Serasa)
 - Presença digital (iFood, Google Maps)
 
-### 🔹 Dados de Pedidos
+### Dados de Pedidos
 - Histórico de compras
 - Valores dos pedidos
 - Atrasos nos pagamentos
 
 ---
 
-## 🧪 Metodologia
+## Metodologia
 
 ### 1. Análise Exploratória (EDA)
 - Identificação de padrões de inadimplência
@@ -61,19 +61,19 @@ Modelos testados:
 
 ---
 
-## 🧠 Modelos Desenvolvidos
+## Modelos Desenvolvidos
 
-### 📌 Modelo de Aplicação
+### Modelo de Aplicação
 - Entrada: dados cadastrais
 - Saída: score de risco (0 a 1)
 
-### 📌 Modelo Comportamental
+### Modelo Comportamental
 - Entrada: dados cadastrais + histórico de pedidos
 - Saída: score de risco atualizado
 
 ---
 
-## 💼 Política de Crédito (Proposta)
+## Política de Crédito (Proposta)
 
 | Score de Risco | Decisão |
 |---------------|--------|
@@ -83,12 +83,12 @@ Modelos testados:
 
 ---
 
-## 🗂️ Estrutura do Projeto
+## Estrutura do Projeto
 
 ---
-## ⚙️ Tecnologias
+## Tecnologias
 
 ---
-## ▶️ Como Executar
+## Como Executar
 
 ---
