@@ -1,0 +1,18 @@
+{
+  "modelo": "LogisticRegression SEM SMOTE",
+  "class_weight": "balanced",
+  "cv_strategy": "RepeatedStratifiedKFold(n_splits=5, n_repeats=10)",
+  "n_estimativas_cv": 50,
+  "auc_teste": 0.5856,
+  "ap_teste": 0.1293,
+  "cv_auc_media": 0.6983,
+  "cv_auc_std": 0.1746,
+  "cv_auc_min": 0.2333,
+  "cv_auc_max": 1.0,
+  "cv_ap_media": 0.2642,
+  "cv_ap_std": 0.1908,
+  "n_treino": 160,
+  "n_teste": 40,
+  "inadimplentes_treino": 10,
+  "inadimplentes_teste": 3
+}
