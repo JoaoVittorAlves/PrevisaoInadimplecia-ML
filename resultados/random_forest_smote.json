@@ -1,0 +1,20 @@
+{
+  "modelo": "RandomForestClassifier com SMOTE",
+  "class_weight": "balanced",
+  "smote_k_neighbors": 3,
+  "n_estimators": 200,
+  "cv_strategy": "RepeatedStratifiedKFold(n_splits=5, n_repeats=10)",
+  "n_estimativas_cv": 50,
+  "auc_teste": 0.6712,
+  "ap_teste": 0.4121,
+  "cv_auc_media": 0.7083,
+  "cv_auc_std": 0.1579,
+  "cv_auc_min": 0.45,
+  "cv_auc_max": 1.0,
+  "cv_ap_media": 0.3126,
+  "cv_ap_std": 0.2108,
+  "n_treino": 160,
+  "n_teste": 40,
+  "inadimplentes_treino": 10,
+  "inadimplentes_teste": 3
+}
