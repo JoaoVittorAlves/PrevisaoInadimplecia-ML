@@ -1,0 +1,18 @@
+{
+  "modelo": "XGBoost sem SMOTE",
+  "scale_pos_weight": 15,
+  "cv_strategy": "RepeatedStratifiedKFold(n_splits=5, n_repeats=10)",
+  "n_estimativas_cv": 50,
+  "auc_teste": 0.6306,
+  "ap_teste": 0.2404,
+  "cv_auc_media": 0.6238,
+  "cv_auc_std": 0.2418,
+  "cv_auc_min": 0.1167,
+  "cv_auc_max": 1.0,
+  "cv_ap_media": 0.3635,
+  "cv_ap_std": 0.2896,
+  "n_treino": 160,
+  "n_teste": 40,
+  "inadimplentes_treino": 10,
+  "inadimplentes_teste": 3
+}
