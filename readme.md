@@ -54,6 +54,7 @@ Modelos testados:
 - Regressão Logística
 - Random Forest
 - XGBoost
+- LightGBM
 
 ### 4. Avaliação
 - Métrica principal: **ROC-AUC**
@@ -85,10 +86,108 @@ Modelos testados:
 
 ## Estrutura do Projeto
 
----
-## Tecnologias
+```
+PrevisaoInadimplecia-ML/
+│
+├── dados/                          # Dados brutos e processados
+│   ├── Brutos/
+│   │   ├── credito_aplicacao_clientes.csv
+│   │   └── credito_comportamental_pedidos.csv
+│   └── tratados/
+│       ├── clientes_preprocessado.csv
+│       ├── teste_preprocessado.csv
+│       └── treino_preprocessado.csv
+│
+├── notebooks/                      # Análises e experimentos
+│   ├── 01_fase1_EDA.ipynb         # Análise exploratória dos dados
+│   ├── 02_fase2_PreProcessamento.ipynb  # Limpeza e transformação
+│   └── 03_fase3_Treinamento.ipynb # Treinamento e avaliação dos modelos
+│
+├── src/                            # Código modularizado
+│   ├── preprocessamento.py         # Funções de pré-processamento
+│   └── train.py                    # Script de treinamento
+│
+├── modelos/                        # Modelos treinados salvos
+│
+├── resultados/                     # Métricas e comparações
+│   ├── baseline.json
+│   ├── comparacao_geral.csv
+│   ├── random_forest_sem_smote.json
+│   ├── random_forest_smote.json
+│   ├── xgboost_sem_smote.json
+│   ├── xgboost_smote.json
+│   ├── lightgbm_sem_smote.json
+│   ├── lightgbm_smote.json
+│   ├── regressao_logistica_sem_smote.json
+│   ├── regressao_logistica_smote.json
+│   └── modelo_selecionado.json
+│
+├── requirements.txt                # Dependências do projeto
+└── readme.md                       # Este arquivo
+
+```
 
 ---
+
+## Tecnologias
+
+- **Python 3.8+**
+- **Pandas** — Manipulação e análise de dados
+- **NumPy** — Computações numéricas
+- **Scikit-learn** — Modelos de machine learning (Regressão Logística, Random Forest)
+- **XGBoost** — Gradient boosting otimizado
+- **LightGBM** — Gradient boosting leve e rápido
+- **Imbalanced-learn** — Técnicas de balanceamento (SMOTE)
+- **Category-encoders** — Encodificação de variáveis categóricas
+- **SHAP** — Interpretabilidade dos modelos
+- **Optuna** — Otimização de hiperparâmetros
+- **Matplotlib & Seaborn** — Visualizações
+- **Jupyter** — Notebooks interativos
+
+---
+
 ## Como Executar
+
+### 1. Configuração do Ambiente
+
+```bash
+# Clone ou acesse o repositório
+cd PrevisaoInadimplecia-ML
+
+# Crie um ambiente virtual
+python -m venv venv
+
+# Ative o ambiente (Windows)
+.\venv\Scripts\Activate.ps1
+
+# Ative o ambiente (Linux/Mac)
+source venv/bin/activate
+
+# Instale as dependências
+pip install -r requirements.txt
+```
+
+### 2. Execução dos Notebooks
+
+Os análises devem ser executadas **em sequência**:
+
+```bash
+# Terminal dentro do diretório do projeto
+jupyter lab
+```
+
+Depois abra e execute:
+1. `notebooks/01_fase1_EDA.ipynb` — Explore os dados
+2. `notebooks/02_fase2_PreProcessamento.ipynb` — Processe e transforme
+3. `notebooks/03_fase3_Treinamento.ipynb` — Treine os modelos
+
+```
+
+### 3. Resultados
+
+Após a execução:
+- Modelos treinados são salvos em `modelos/`
+- Métricas e resultados são salvos em `resultados/`
+- O melhor modelo é referenciado em `resultados/modelo_selecionado.json`
 
 ---
